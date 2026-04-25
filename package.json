@@ -20,17 +20,20 @@
     "url": "git+https://github.com/zxdong262/socksv5-server.git"
   },
   "license": "MIT",
-  "author": "zxdong262",
+  "author": {
+    "name": "ZHAO Xudong",
+    "email": "zxdong@gamil.com"
+  },
   "exports": {
     ".": {
+      "types": "./dist/esm/index.d.ts",
       "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.cjs",
-      "types": "./dist/esm/index.d.ts"
+      "require": "./dist/cjs/index.cjs"
     }
   },
   "main": "./dist/cjs/index.cjs",
   "module": "./dist/esm/index.js",
-  "types": "./dist/esm/index.d.ts",
+  "type": "module",
   "files": [
     "dist",
     "README.md",
