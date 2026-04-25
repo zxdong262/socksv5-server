@@ -1,6 +1,6 @@
 {
   "name": "socksv5-server",
-  "version": "1.0.1-beta.1.0",
+  "version": "1.0.2",
   "description": "SOCKS5 server and client for Node.js, rewritten in TypeScript from socksv5/socksv5-electron",
   "keywords": [
     "socks",
