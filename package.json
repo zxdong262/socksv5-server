@@ -1,0 +1,57 @@
+{
+  "name": "socksv5-server",
+  "version": "1.0.1-beta.1.0",
+  "description": "SOCKS5 server and client for Node.js, rewritten in TypeScript from socksv5/socksv5-electron",
+  "keywords": [
+    "socks",
+    "socks5",
+    "socksv5",
+    "proxy",
+    "tunnel",
+    "ssh",
+    "typescript"
+  ],
+  "homepage": "https://github.com/zxdong262/socksv5-server#readme",
+  "bugs": {
+    "url": "https://github.com/zxdong262/socksv5-server/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zxdong262/socksv5-server.git"
+  },
+  "license": "MIT",
+  "author": "zxdong262",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.cjs",
+      "types": "./dist/esm/index.d.ts"
+    }
+  },
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "README_cn.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
